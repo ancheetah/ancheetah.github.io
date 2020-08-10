@@ -1,41 +1,58 @@
-<div class="nav-bar"></div>
+<!-- Product page for socks using vue.js -->
 
-<div id="app">
-  
-  <div class="product">
-        
-    <div class="product-image">
-      <img :src="image" />
-    </div>
+<html lang="en">
 
-    <div class="product-info">
-      <h1>{{ product }}</h1>
-      <p v-if="inStock">In Stock</p>
-      <p v-else>Out of Stock</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Vue.js Project</title>
+</head>
 
-      <ul>
-        <li v-for="detail in details">{{ detail }}</li>
-      </ul>
+<body>
 
-      <div v-for="variant in variants" :key="variant.variantId">
-        <p @mouseover="updateProduct(variant.variantImage)">{{ variant.variantColor }}</p>
-      </div>
-      
-      
-      <button v-on:click="addToCart">Add to cart</button>
-      
-      <!-- The "@" is shorthand for the v-on directive. v-on is used with DOM events. -->
-      <button @click="removeFromCart">Remove from Cart</button>
-      
+  <div class="nav-bar"></div>
 
-      <div class="cart">
-        <p>Cart({{ cart }})</p>
+  <div id="app">
+
+    <div class="product">
+
+      <div class="product-image">
+        <img :src="image" />
       </div>
 
+      <div class="product-info">
+        <h1>{{ product }}</h1>
+        <p v-if="inStock">In Stock</p>
+        <p v-else>Out of Stock</p>
+
+        <ul>
+          <li v-for="detail in details">{{ detail }}</li>
+        </ul>
+
+        <div v-for="variant in variants" :key="variant.variantId">
+          <p @mouseover="updateProduct(variant.variantImage)">{{ variant.variantColor }}</p>
+        </div>
+
+
+        <button v-on:click="addToCart">Add to cart</button>
+
+        <!-- The "@" is shorthand for the v-on directive. v-on is used with DOM events. -->
+        <button @click="removeFromCart">Remove from Cart</button>
+
+
+        <div class="cart">
+          <p>Cart({{ cart }})</p>
+        </div>
+
+      </div>
+
     </div>
-    
+
   </div>
-  
-</div> 
 
- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
+
+</body>
+
+</html>

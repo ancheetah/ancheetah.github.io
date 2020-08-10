@@ -1,59 +1,99 @@
-<!-- Product page for socks using vue.js -->
-
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First Vue.js Project</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="home-styles.css">
 </head>
 
 <body>
+    <div class="wrapper">
 
-  <div class="nav-bar"></div>
+        <h2>AJ's Portfolio</h2>
 
-  <div id="app">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col"></div>
 
-    <div class="product">
+                <div class="col-10"> -->
+            <div class="card-deck">
 
-      <div class="product-image">
-        <img :src="image" />
-      </div>
+                <div class="card">
 
-      <div class="product-info">
-        <h1>{{ product }}</h1>
-        <p v-if="inStock">In Stock</p>
-        <p v-else>Out of Stock</p>
+                    <a href="https://www.gilligancontracting.com"><img class="card-img-top"
+                            src="https://picsum.photos/seed/35785/300" alt="Gilligan Contracting logo" /></a>
 
-        <ul>
-          <li v-for="detail in details">{{ detail }}</li>
-        </ul>
+                    <div class="card-body bg-light">
+                        <h5 class="card-title text-dark">Freelance: Gilligan Contracting</h5>
+                        <p class="card-text text-muted">Small business website redesign with Squarespace. Added
+                            more breakpoints for better responsive design. Custom CSS/HTML. Logo creation.
+                            Photoshop CC &amp; Lightroom CC editing. Transferred old, outdated site to new
+                            domain registrar as well as DNS, email, and web hosting.</p>
+                    </div>
 
-        <div v-for="variant in variants" :key="variant.variantId">
-          <p @mouseover="updateProduct(variant.variantImage)">{{ variant.variantColor }}</p>
+                    <div class="card-footer bg-secondary txt-white">
+                        <a href="https://www.gilligancontracting.com">Go to website</a>
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <a href="vueProduct/index.html"><img class="card-img-top" src="https://picsum.photos/seed/16709/300"
+                            alt="Vue Socks"></a>
+
+                    <div class="card-body bg-light">
+                        <h5 class="card-title text-dark">What I'm learning: Vue.js</h5>
+                        <p class="card-text text-muted">Dynamic product page with cart and hover events.
+                            Following along with <b>Intro to Vue.js</b> course from <a
+                                href="https://www.vuemastery.com/courses/intro-to-vue-js">Vue Mastery</a>.</p>
+                    </div>
+
+                    <div class="card-footer bg-secondary txt-white">
+                        <a href="vueProduct/index.html">Go to product page</a>
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <a href="https://github.com/ancheetah"><img class="card-img-top"
+                            src="https://picsum.photos/seed/48924/300" alt="Vue Socks"></a>
+
+                    <div class="card-body bg-light">
+                        <h5 class="card-title text-dark">GitHub</h5>
+                        <p class="card-text text-muted">Check out my code for various projects <a href="https://github.com/ancheetah">here</a> and learn a
+                            little bit about me.</p>
+                    </div>
+
+                    <div class="card-footer bg-secondary txt-white">
+                        <a href="https://github.com/ancheetah">Go to GitHub</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- </div>
+
+                <div class="col"></div> -->
         </div>
 
-
-        <button v-on:click="addToCart">Add to cart</button>
-
-        <!-- The "@" is shorthand for the v-on directive. v-on is used with DOM events. -->
-        <button @click="removeFromCart">Remove from Cart</button>
-
-
-        <div class="cart">
-          <p>Cart({{ cart }})</p>
-        </div>
-
-      </div>
 
     </div>
 
-  </div>
+    </div>
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-  <script src="script.js"></script>
+    <small>
+        This page was created with <a href="https://getbootstrap.com/">Bootstrap v4.3.1</a>. Page last updated on <span id="modifiedDate"></span>.
+    </small>
+
+<script>
+// function getModifiedDate() {
+  document.getElementById("modifiedDate").innerHTML = document.lastModified;
+// }
+</script>
 
 </body>
 

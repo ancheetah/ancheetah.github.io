@@ -1,0 +1,13 @@
+.wrapper {
+    margin: 10vh;
+}
+
+h2 {
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.card-footer a {
+    color: white !important;
+    text-align: center;
+}

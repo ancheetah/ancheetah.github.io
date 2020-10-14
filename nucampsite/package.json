@@ -10,14 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ancheetah/nucampsite.git"
+    "url": "https://github.com/ancheetah/ancheetah.github.io.git"
   },
   "author": "AJ Ancheta",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ancheetah/nucampsite/issues"
-  },
-  "homepage": "https://github.com/ancheetah/nucampsite#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
   },

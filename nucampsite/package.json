@@ -1,25 +1,28 @@
 {
   "name": "nucampsite",
   "version": "1.0.0",
-  "description": "This is a website for the fictional campsites review site NuCamp.",
+  "description": "Live Nucamp website for personal portfolio",
   "main": "index.html",
   "scripts": {
-    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lite": "lite-server"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/ancheetah/nucampsite.git"
   },
   "author": "AJ Ancheta",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ancheetah/nucampsite/issues"
+  },
+  "homepage": "https://github.com/ancheetah/nucampsite#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }

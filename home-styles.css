@@ -1,13 +1,13 @@
-.wrapper {
+/* .wrapper {
     margin: 10vh;
-}
+} */
 
-h2 {
+/* h2 {
     padding-bottom: 1em;
     text-align: center;
-}
+} */
 
 .card-footer a {
-    color: white !important;
+    color: white;
     text-align: center;
 }

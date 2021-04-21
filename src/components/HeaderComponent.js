@@ -19,15 +19,15 @@ function Header() {
 
             <NavbarToggler onClick={toggle} />
                 <Collapse navbar isOpen={isOpen}>
-                    <Nav navbar>
-                        <NavItem>
-                            <NavLink className="nav-link" to="/home">Link 1</NavLink>
+                    <Nav navbar className="navbar-main">
+                        <NavItem className="nav-item-main">
+                            <NavLink className="nav-link-main" to="/home">Link 1</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="nav-link" to="/home">Link 2</NavLink>
+                            <NavLink className="nav-link-main" to="/home">Link 2</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="nav-link" to="/home"><FontAwesomeIcon icon={faHome}/> Home</NavLink>
+                            <NavLink className="nav-link-main" to="/home"><FontAwesomeIcon icon={faHome}/> Home</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

@@ -4,7 +4,7 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';  // Remove this line if using Sass so compiling gets done at end
 import 'typeface-raleway';
 
 ReactDOM.render(

@@ -1,4 +1,7 @@
+// @import "~bootstrap/scss/bootstrap";
+@import './theme.scss';
 
+$header-footer-text: $light;
 
 // Sticky Footer
 .main {
@@ -17,7 +20,7 @@
 .footer {
   flex-shrink: 0;
   margin-bottom: 0 !important;
-  color: white;
+  color: $light;
   background: linear-gradient(135deg, hsla(29, 83%, 58%, 1) 25%, hsla(265, 53%, 29%, 1) 100%);
 }
 
@@ -26,10 +29,4 @@
   background: linear-gradient(135deg, hsla(265, 53%, 29%, 1) 25%, hsla(29, 83%, 58%, 1) 100%);
 }
 
-.nav-link {
-  color: white !important;
-}
-
-// .App {
-//   text-align: center;
-// }
+@import '~bootstrap/scss/bootstrap';

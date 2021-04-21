@@ -1,2 +1,2 @@
-## My Project Portfolio
-A collection of freelance websites, a Bootstrap recipe website, and a React.js merch store
+## My Web Dev and Design Portfolio
+A collection of freelance websites, React apps, and static Bootstrap sites.

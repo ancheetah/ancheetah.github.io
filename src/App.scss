@@ -1,17 +1,17 @@
 // @import "~bootstrap/scss/bootstrap";
 @import './theme.scss';
 
-$header-footer-text: $light;
+$sidebar-width: 15rem;
 
 // Sticky Footer
-.main {
+.main-wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   font-family: 'Raleway', Arial, sans-serif;
 }
 
-.main-wrapper {
+.content-wrapper {
   flex: 1 0 auto;
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -24,9 +24,21 @@ $header-footer-text: $light;
   background: linear-gradient(135deg, hsla(29, 83%, 58%, 1) 25%, hsla(265, 53%, 29%, 1) 100%);
 }
 
-// Navbar
-.navbar-dark {
+.header {
   background: linear-gradient(135deg, hsla(265, 53%, 29%, 1) 25%, hsla(29, 83%, 58%, 1) 100%);
+  color: $light;
+}
+
+.navbar-main {
+  font-size: 1.2rem;
+  margin-top: 15vh;
+  margin-bottom: 2rem;
+  transition: all 0.5s;
+}
+
+#sidebar-bg {
+  background: $dark;
+  padding: 0;
 }
 
 @import '~bootstrap/scss/bootstrap';

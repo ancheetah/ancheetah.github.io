@@ -23,14 +23,14 @@ function Main(props) {
 
                         <Header/>
                         <Container className="content-wrapper bg-light">
-                            <h2>Hello Main!</h2>
+                            {/* <h2>Hello Main!</h2> */}
                             <Switch>
                                 <Route path='/home' component={Home} />
                                 <Redirect to='/home' />
                             </Switch>
                         </Container>
                         <Footer/>
-                        
+
                     </div>
                 </Col>
 

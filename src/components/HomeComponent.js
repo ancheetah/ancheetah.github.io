@@ -2,11 +2,6 @@ import React from 'react';
 
 function Home() {
     return (
-        // <div>
-        //     <h3>Welcome Home!</h3>
-        //     <h4 className="text-primary">primary text color.</h4>
-        //     <h4 className="text-dark">dark text color.</h4>
-        // </div>
         <div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 my-5">
                 <div class="col mb-4">
@@ -17,7 +12,7 @@ function Home() {
                             <h5 class="card-title text-dark">GitHub</h5>
                             <p class="card-text text-muted">Check out my code for various projects <a target="_blank"
                                     href="https://github.com/ancheetah" rel="noreferrer">here</a> and learn a
-                                little bit about me.</p>
+                                    little bit about me.</p>
                         </div>
                         <div class="card-footer bg-secondary txt-white">
                             <a target="_blank" href="https://github.com/ancheetah" rel="noreferrer">Go to GitHub <i

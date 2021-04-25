@@ -1,0 +1,49 @@
+// @import "~bootstrap/scss/bootstrap";
+@import './theme.scss';
+
+$sidebar-width: 15rem;
+
+// Sticky Footer
+.main-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+.content-wrapper {
+  flex: 1 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footer {
+  flex-shrink: 0;
+  margin-bottom: 0 !important;
+  color: $light;
+  background: linear-gradient(135deg, hsla(29, 83%, 58%, 1) 25%, hsla(265, 53%, 29%, 1) 100%);
+}
+
+.header {
+  background: linear-gradient(135deg, hsla(265, 53%, 29%, 1) 25%, hsla(29, 83%, 58%, 1) 100%);
+  color: $light;
+}
+
+.navbar-main {
+  font-size: 1.2rem;
+  margin-top: 15vh;
+  margin-bottom: 2rem;
+  transition: all 0.5s;
+}
+
+#sidebar-bg {
+  background: $dark;
+  padding: 0;
+}
+
+.card-footer a {
+  color: white;
+  text-align: center;
+}
+
+@import '~bootstrap/scss/bootstrap';

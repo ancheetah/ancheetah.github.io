@@ -1,6 +1,9 @@
 import React from 'react';
+import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Home() {
+    const arrow = <FontAwesomeIcon icon={faLongArrowAltRight} className="ml-1"/>;
     return (
         <div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 my-5">
@@ -15,8 +18,7 @@ function Home() {
                                     little bit about me.</p>
                         </div>
                         <div class="card-footer bg-secondary txt-white">
-                            <a target="_blank" href="https://github.com/ancheetah" rel="noreferrer">Go to GitHub <i
-                                    class="fa fa-long-arrow-right"></i></a>
+                            <a target="_blank" href="https://github.com/ancheetah" rel="noreferrer">Go to GitHub {arrow}</a>
                         </div>
                     </div>
                 </div>
@@ -26,12 +28,11 @@ function Home() {
                                 src="img/Bootstrap-logo.png" alt="bootstrap logo" width="200" height="200"/></a>
                         <div class="card-body bg-light">
                             <h5 class="card-title text-dark">4Foodies</h5>
-                            <p class="card-text text-muted">A responsive recipe <a href="4foodies/index.html" target="blank">website</a> built with Bootstrap for
+                            <p class="card-text text-muted">A responsive recipe <a href="https://ancheetah.github.io/4foodies" target="blank">website</a> built with Bootstrap for
                                 Nucamp Coding Bootcamp. My first github collaboration!</p>
                         </div>
                         <div class="card-footer bg-secondary txt-white">
-                            <a target="_blank" href="https://github.com/ancheetah/4foodies" rel="noreferrer">View Project Proposal <i
-                                    class="fa fa-long-arrow-right"></i></a>
+                            <a target="_blank" href="https://github.com/ancheetah/4foodies" rel="noreferrer">View Project Proposal { arrow }</a>
                         </div>
                     </div>
                 </div>
@@ -45,8 +46,7 @@ function Home() {
                                 shopping cart and the ability to sort items. Demo the store <a href="https://ancheetah.github.io/supreme" target="_blank" rel="noreferrer">here</a>.</p>
                         </div>
                         <div class="card-footer bg-secondary txt-white">
-                            <a target="_blank" href="https://github.com/ancheetah/supreme" rel="noreferrer">Go To Repository <i
-                                    class="fa fa-long-arrow-right"></i></a>
+                            <a target="_blank" href="https://github.com/ancheetah/supreme" rel="noreferrer">Go To Repository { arrow }</a>
                         </div>
                     </div>
                 </div>
@@ -60,8 +60,7 @@ function Home() {
                                 using React Native while following along with Nucamp coding bootcamp.</p>
                         </div>
                         <div class="card-footer bg-secondary txt-white">
-                            <a target="_blank" href="https://github.com/ancheetah/react-native-nucamp" rel="noreferrer">Go to Repository <i
-                                    class="fa fa-long-arrow-right"></i></a>
+                            <a target="_blank" href="https://github.com/ancheetah/react-native-nucamp" rel="noreferrer">Go to Repository { arrow }</a>
                         </div>
                     </div>
                 </div>
@@ -76,8 +75,7 @@ function Home() {
                             </p>
                         </div>
                         <div class="card-footer bg-secondary txt-white">
-                            <a target="_blank" href="https://www.madiff.org/" rel="noreferrer">Go to Website <i
-                                    class="fa fa-long-arrow-right"></i></a>
+                            <a target="_blank" href="https://www.madiff.org/" rel="noreferrer">Go to Website { arrow }</a>
                         </div>
                     </div>
                 </div>
@@ -92,8 +90,7 @@ function Home() {
                                     href="https://www.vuemastery.com/courses/intro-to-vue-js">Vue Mastery</a>.</p>
                         </div>
                         <div class="card-footer bg-secondary txt-white">
-                            <a target="_blank" href="vueProduct/index.html">Go to product page <i
-                                    class="fa fa-long-arrow-right"></i></a>
+                            <a target="_blank" href="vueProduct/index.html">Go to product page { arrow }</a>
                         </div>
                     </div>
                 </div> --> */}
@@ -113,8 +110,7 @@ function Home() {
                         </div>
                         <div class="card-footer bg-light">
                             <a target="_blank" href="https://www.gilligancontracting.com" class="text-primary" rel="noreferrer">Go to
-                                website
-                                <i class="fa fa-long-arrow-right"></i></a>
+                                website { arrow }</a>
                         </div>
                     </div>
                 </div>

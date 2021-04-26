@@ -17,14 +17,14 @@ function Home(props) {
         <div>
         
             <h2 className="my-3 text-center">Skills & Tools</h2>
-            <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 bg-white m-3 py-2">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 bg-white m-3 py-2">
                 {skills}
             </div>
 
             <hr/>
 
             <h2 className="py-2">Projects</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-3">
                 <div class="col mb-4">
                     <div class="card h-100">
                         <a target="_blank" href="https://github.com/ancheetah" rel="noreferrer"><img class="card-img-top img-fluid"

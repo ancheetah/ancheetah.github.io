@@ -4,7 +4,7 @@ import { Jumbotron, Row, Col } from 'reactstrap';
 function Header() {
 
     return (
-        <Jumbotron fluid  className="header">
+        <Jumbotron fluid  className="header mb-0">
             <Row>
                 <Col md="7" className="mx-5">
                     <h1 className="display-3">Welcome</h1>

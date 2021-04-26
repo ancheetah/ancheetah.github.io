@@ -11,7 +11,7 @@ function Header() {
                     <p className="lead">Hi, I'm AJ! An aspiring Front End Web Developer with a
                         background in astrophysics and art. I like to make functional things
                         that look pretty ✨</p>
-                    <p>This page is currently under construction and is created with React.js</p>
+                    <p>This page is currently under construction and is being created with React.js</p>
                 </Col>
             </Row>
         </Jumbotron>

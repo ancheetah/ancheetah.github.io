@@ -2,11 +2,29 @@ import React from 'react';
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Home() {
+function Home(props) {
     const arrow = <FontAwesomeIcon icon={faLongArrowAltRight} className="ml-1"/>;
+    const skills = props.tools.map( tool => {
+        return (
+            <div key={tool.id} className="col my-auto d-flex justify-content-center">
+                <img src={"../../img/tools/" + tool.logo} alt={tool.name} 
+                    width="auto" height="50" className="my-2"/>
+            </div>
+        );
+    });
+
     return (
         <div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 my-5">
+        
+            <h2 className="my-3 text-center">Skills & Tools</h2>
+            <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 bg-white m-3 py-2">
+                {skills}
+            </div>
+
+            <hr/>
+
+            <h2 className="py-2">Projects</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col mb-4">
                     <div class="card h-100">
                         <a target="_blank" href="https://github.com/ancheetah" rel="noreferrer"><img class="card-img-top img-fluid"

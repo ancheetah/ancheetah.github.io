@@ -3,6 +3,10 @@
 
 // $sidebar-width: 15rem;
 
+h1, h2, h3, h4 {
+  font-family:'Monofett', 'Courier New', Courier, monospace;
+}
+
 // Sticky Footer
 .main-wrapper {
   display: flex;
@@ -13,8 +17,8 @@
 
 .content-wrapper {
   flex: 1 0 auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
@@ -23,6 +27,7 @@
   color: $light;
   background: linear-gradient(135deg, hsla(29, 83%, 58%, 1) 25%, hsla(265, 53%, 29%, 1) 100%);
 }
+// ----------------
 
 .header {
   background: linear-gradient(135deg, hsla(265, 53%, 29%, 1) 25%, hsla(29, 83%, 58%, 1) 100%);

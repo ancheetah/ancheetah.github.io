@@ -75,13 +75,13 @@ function Home(props) {
             <h1 id="credentials" className="text-center py-3">Credentials</h1>
 
             <Jumbotron className="bg-primary text-light py-4">
-                <h5>Education</h5>
+                <h5 className="text-center">Education</h5>
                 <ul class="list-unstyled">
-                    <li><em>B.S. Astrophysics</em>, 2013, UCLA</li>
-                    <li><em>M.S. Physics</em>, 2016, The Catholic University of America</li>
-                    <li><em>Javascript Algorithms and Data Structures Certification</em>, 2020, freeCodeCamp</li>
-                    <li><em>Front End Web Development Certification with Honors</em>, 2021, Nucamp</li>
-                    <li><em>Full Stack Web Development Certification</em>, 2021, Nucamp</li>
+                    <li><strong>B.S. Astrophysics</strong>, 2013, <em>UCLA</em></li>
+                    <li><strong>M.S. Physics</strong>, 2016, <em>The Catholic University of America</em></li>
+                    <li><strong>Javascript Algorithms and Data Structures Certification</strong>, 2020, <em>freeCodeCamp</em></li>
+                    <li><strong>Front End Web Development Certification with Honors</strong>, 2021, <em>Nucamp</em></li>
+                    <li><strong>Full Stack Web Development Certification</strong>, 2021, <em>Nucamp</em></li>
                 </ul>
             </Jumbotron>
 

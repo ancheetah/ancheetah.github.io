@@ -34,7 +34,7 @@ class Main extends Component {
                             <Header/>
                             <Container fluid className="content-wrapper bg-light py-5">
                                 <Switch>
-                                    <Route path='/home' render={() => 
+                                    <Route exact path='/home' render={() => 
                                         <Home tools={this.state.tools} 
                                             projects={this.state.projects} 
                                             badges={this.state.badges}

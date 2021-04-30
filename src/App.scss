@@ -17,8 +17,8 @@ h1, h2, h3, h4 {
 
 .content-wrapper {
   flex: 1 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .footer {

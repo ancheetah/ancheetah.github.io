@@ -7,12 +7,14 @@ import SidebarNav from './SidebarNavComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import { TOOLS } from '../shared/tools';
+import { PROJECTS } from '../shared/projects';
 
 class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            tools: TOOLS
+            tools: TOOLS,
+            projects: PROJECTS
         }
     }
 
@@ -32,7 +34,8 @@ class Main extends Component {
                             <Header/>
                             <Container className="content-wrapper bg-light">
                                 <Switch>
-                                    <Route exact path='/home' render={() => <Home tools={this.state.tools}/> } />
+                                    <Route path='/home' render={() => 
+                                        <Home tools={this.state.tools} projects={this.state.projects} /> } />
                                     <Redirect to='/home' />
                                 </Switch>
                             </Container>

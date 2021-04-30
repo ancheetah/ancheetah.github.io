@@ -1,11 +1,11 @@
 import React from 'react';
-// import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Card, CardImg, CardBody,
         CardTitle, CardSubtitle, CardLink } from 'reactstrap';
 
 function Home(props) {
-    // const arrow = <FontAwesomeIcon icon={faLongArrowAltRight}/>;
+    const arrow = <FontAwesomeIcon icon={faExternalLinkAlt}/>;
     const tools = props.tools.map( tool => {
         return (
             <Col key={tool.id} className="my-auto d-flex justify-content-center">
@@ -29,9 +29,9 @@ function Home(props) {
                             <CardBody>
                                 <CardTitle>{project.name}</CardTitle>
                                 <CardSubtitle className="text-muted mb-3">{project.desc}</CardSubtitle>
-                                <CardLink href={project.demo}>Project Demo</CardLink>
-                                <CardLink href={"https://www.github.com/ancheetah/" + project.repo}>
-                                    Repository</CardLink>
+                                <CardLink href={project.demo}>Demo {arrow}</CardLink>
+                                <CardLink href={'https://www.github.com/ancheetah/' + project.repo}>
+                                    Repository {arrow}</CardLink>
                             </CardBody>
                         </Col>
                     </Row>

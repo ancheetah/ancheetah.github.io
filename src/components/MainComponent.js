@@ -8,13 +8,15 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import { TOOLS } from '../shared/tools';
 import { PROJECTS } from '../shared/projects';
+import { NUCAMP } from '../shared/nucamp';
 
 class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
             tools: TOOLS,
-            projects: PROJECTS
+            projects: PROJECTS,
+            badges: NUCAMP
         }
     }
 
@@ -33,7 +35,10 @@ class Main extends Component {
                             <Container fluid className="content-wrapper bg-light py-5">
                                 <Switch>
                                     <Route path='/home' render={() => 
-                                        <Home tools={this.state.tools} projects={this.state.projects} /> } />
+                                        <Home tools={this.state.tools} 
+                                            projects={this.state.projects} 
+                                            badges={this.state.badges}
+                                        /> } />
                                     <Redirect to='/home' />
                                 </Switch>
                             </Container>

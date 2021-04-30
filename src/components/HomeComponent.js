@@ -2,16 +2,29 @@ import React from 'react';
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Card, CardImg, CardBody,
-        CardTitle, CardSubtitle, CardLink } from 'reactstrap';
+        CardTitle, CardSubtitle, CardLink, Jumbotron } from 'reactstrap';
 
 function Home(props) {
     const arrow = <FontAwesomeIcon icon={faExternalLinkAlt}/>;
+    const centerCol = "mx-auto d-flex justify-content-center";
 
     const tools = props.tools.map( tool => {
         return (
             <Col key={tool.id} className="my-auto d-flex justify-content-center">
-                <img src={"../../img/tools/" + tool.logo} alt={tool.name} 
+                <img src={"/img/tools/" + tool.logo} alt={tool.name} 
                     width="auto" height="50" className="my-2"/>
+            </Col>
+        );
+    });
+
+    const badges = props.badges.map( badge => {
+        return (
+            <Col key={badge.id} className={centerCol}>
+                <figure className="figure">
+                    <img src={"/img/certs/" + badge.img} alt={badge.name}
+                        width="150" height="150" className="figure-img img-fluid"/>
+                    <figcaption class="figure-caption text-center">{badge.name}</figcaption>
+                </figure>
             </Col>
         );
     });
@@ -59,45 +72,44 @@ function Home(props) {
 
             <hr class="my-5" />
 
-            <div class="row">
-                <div class="col-10 bg-primary text-white py-5 mx-auto rounded-lg">
-                    <h3 class="text-center">Nucamp Full Stack Web + Mobile Development Bootcamp</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5 d-flex justify-content-center mx-auto my-4">
-                    {/* <!-- <h4>Bootstrap</h4> --> */}
-                    <figure class="figure">
-                        <img src="img/Bootstrap_Course_Completion.png" alt="Nucamp Bootstrap Badge"
-                            class="figure-img img-fluid border-0" width="150" height="150" />
-                        <figcaption class="figure-caption text-center">Bootstrap <br/></figcaption>
-                    </figure>
-                </div>
-                <div class="col-5 d-flex justify-content-center mx-auto my-4">
-                    {/* <!-- <h4>React Native</h4> --> */}
-                    <figure class="figure">
-                        <img src="img/React_Native_Course_Completion.png" alt="Nucamp React Native Badge"
-                            class="figure-img img-fluid border-0" width="150" height="150" />
-                        <figcaption class="figure-caption text-center">React Native</figcaption>
-                    </figure>
-                </div>
-                <div class="col-5 d-flex justify-content-center mx-auto my-4">
-                    {/* <!-- <h4>React</h4> --> */}
-                    <figure class="figure">
-                        <img src="img/React_Course_Completion.png" alt="Nucamp React Badge"
-                            class="figure-img img-fluid border-0" width="150" height="150" />
-                        <figcaption class="figure-caption text-center">React</figcaption>
-                    </figure>
-                </div>
-                <div class="col-5 d-flex justify-content-center mx-auto my-4">
-                    {/* <!-- <h4>Backend</h4> --> */}
-                    <figure class="figure">
-                        <img src="img/Node_Express_MongoDB_Course_Completion.png" alt="Nucamp React Badge"
-                            class="figure-img img-fluid border-0" width="150" height="150" />
-                        <figcaption class="figure-caption text-center">Node, Express, Mongo DB</figcaption>
-                    </figure>
-                </div>
-            </div>
+            <h1 id="credentials" className="text-center py-3">Credentials</h1>
+            {/* <h3 class="bg-primary text-light text-center px-2 py-4 rounded-lg">
+                Nucamp Full Stack Web + Mobile Development Bootcamp
+            </h3> */}
+            <Jumbotron className="bg-primary text-light py-4">
+                <h5>Education</h5>
+                <ul class="list-unstyled">
+                    <li><em>B.S. Astrophysics</em>, 2013, UCLA</li>
+                    <li><em>M.S. Physics</em>, 2016, The Catholic University of America</li>
+                    <li><em>Javascript Algorithms and Data Structures Certification</em>, 2020, freeCodeCamp</li>
+                    <li><em>Front End Web Development Certification with Honors</em>, 2021, Nucamp</li>
+                    <li><em>Full Stack Web Development Certification</em>, 2021, Nucamp</li>
+                </ul>
+            </Jumbotron>
+            <Row className="row-cols-2 row-cols-lg-4 m-5">
+                {badges}
+            </Row>
+            <Row>
+                <Col md={6}>
+                    <img src="/img/nucamp/FrontEndCert.jpg" 
+                        alt="Nucamp Front End Certificate with Honors" className="img-fluid"/>
+                </Col>
+                <Col md={6}>
+                    <img src="/img/certs/BackendCert.jpg" 
+                        alt="Nucamp Backend Certificate" className="img-fluid"/>
+                </Col>
+            </Row>
+            <Row className="my-4">
+                <Col md={6} className={centerCol}>
+                    <a href="https://www.freecodecamp.org/certification/ancheetah/javascript-algorithms-and-data-structures"
+                        target="_blank" rel="noreferrer">
+                        <img src="/img/certs/freeCodeCamp_Cert.png"
+                            alt="freeCodeCamp Javascript Certificate" className="img-fluid"/>
+                    </a>
+                </Col>
+            </Row>
+
+            
         </div>
     );
 }

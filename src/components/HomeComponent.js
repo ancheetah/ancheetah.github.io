@@ -56,7 +56,7 @@ function Home(props) {
     })
 
     return (
-        <div>
+        <React.Fragment>
         
             <h1 className="py-3 text-center">Toolbox</h1>
             <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 bg-white m-3 py-2">
@@ -73,9 +73,7 @@ function Home(props) {
             <hr class="my-5" />
 
             <h1 id="credentials" className="text-center py-3">Credentials</h1>
-            {/* <h3 class="bg-primary text-light text-center px-2 py-4 rounded-lg">
-                Nucamp Full Stack Web + Mobile Development Bootcamp
-            </h3> */}
+
             <Jumbotron className="bg-primary text-light py-4">
                 <h5>Education</h5>
                 <ul class="list-unstyled">
@@ -86,12 +84,14 @@ function Home(props) {
                     <li><em>Full Stack Web Development Certification</em>, 2021, Nucamp</li>
                 </ul>
             </Jumbotron>
+
             <Row className="row-cols-2 row-cols-lg-4 m-5">
                 {badges}
             </Row>
+
             <Row>
                 <Col md={6}>
-                    <img src="/img/nucamp/FrontEndCert.jpg" 
+                    <img src="/img/certs/FrontEndCert.jpg" 
                         alt="Nucamp Front End Certificate with Honors" className="img-fluid"/>
                 </Col>
                 <Col md={6}>
@@ -108,9 +108,8 @@ function Home(props) {
                     </a>
                 </Col>
             </Row>
-
             
-        </div>
+        </React.Fragment>
     );
 }
 

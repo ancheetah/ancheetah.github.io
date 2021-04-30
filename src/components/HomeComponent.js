@@ -1,11 +1,12 @@
 import React from 'react';
-import { faExternalLinkAlt, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Card, CardImg, CardBody,
         CardTitle, CardSubtitle, CardLink } from 'reactstrap';
 
 function Home(props) {
     const arrow = <FontAwesomeIcon icon={faExternalLinkAlt}/>;
+
     const tools = props.tools.map( tool => {
         return (
             <Col key={tool.id} className="my-auto d-flex justify-content-center">
@@ -14,6 +15,7 @@ function Home(props) {
             </Col>
         );
     });
+
     const projects = props.projects.map( project => {
         return (
             <Col key={project.id} className="my-3">
@@ -51,7 +53,7 @@ function Home(props) {
             <hr className="my-5"/>
 
             <h1 className="py-3 text-center">Projects</h1>
-            <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 m-3">
+            <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 m-3 mx-xl-5">
                 {projects}
             </Row>
 

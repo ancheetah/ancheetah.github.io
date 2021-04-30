@@ -2,7 +2,7 @@ import React, { useState }  from 'react';
 import { Navbar, NavbarBrand, NavbarToggler, Nav, 
     NavItem, NavLink, Collapse} from 'reactstrap';
 import { faHome, faCameraRetro, faCertificate } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin, faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -12,10 +12,10 @@ function SidebarNav() {
     const toggle = () => setIsOpen(!isOpen);
 
     return (            
-        <Navbar dark expand="md" sticky="top">
+        <Navbar dark expand="md" className="navbar-main">
             <NavbarToggler onClick={toggle} />
             <Collapse navbar isOpen={isOpen}>
-                <Nav vertical navbar className="navbar-main">
+                <Nav vertical navbar className="nav-main">
                     
                     <NavbarBrand href="/home" className="mb-4">
                         <img src="../../logo192.png" alt="Logo" height="80" width="80"/>
@@ -46,22 +46,22 @@ function SidebarNav() {
                     </NavItem>
 
                     <NavItem>
-                        <NavLink className="nav-link-main" href="https://www.instagram.com/bad_habit_frames_/" target="_blank">
+                        <NavLink className="nav-link-main text-nowrap" href="https://www.instagram.com/bad_habit_frames_/" target="_blank">
                             <FontAwesomeIcon icon={faCameraRetro} className="mr-2"/>Photography
                         </NavLink>
                     </NavItem>
 
                     <NavItem>
-                        <NavLink className="nav-link-main" href="#" target="_blank">
+                        <NavLink className="nav-link-main text-nowrap" href="#" target="_blank">
                             <FontAwesomeIcon icon={faCertificate} className="mr-2"/>Credentials
                         </NavLink>
                     </NavItem>
 
-                    <NavItem>
+                    {/* <NavItem>
                         <NavLink className="nav-link-main" href="mailto:aj.ancheetah@yahoo.com" target="_blank">
                             <FontAwesomeIcon icon={faEnvelope} className="mr-2"/>Email
                         </NavLink>
-                    </NavItem>
+                    </NavItem> */}
 
                 </Nav>
             </Collapse>

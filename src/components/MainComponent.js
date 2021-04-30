@@ -23,11 +23,11 @@ class Main extends Component {
             <Container fluid className="page-wrapper">
                 <Row>
 
-                    <Col xs={12} md={2} id="sidebar-bg">
+                    <Col xs={12} md={3} lg={2} id="sidebar-container">
                         <SidebarNav/>
                     </Col>
 
-                    <Col md={10} className="px-0">
+                    <Col className="px-0">
                         <div className="main-wrapper">
                             <Header/>
                             <Container fluid className="content-wrapper bg-light py-5">

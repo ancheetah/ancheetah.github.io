@@ -2,6 +2,10 @@
 @import './theme.scss';
 
 // $sidebar-width: 15rem;
+@mixin stickytop() {
+  position: sticky !important;
+  top: 0;
+}
 
 h1 {
   font-family:'Monofett', 'Courier New', Courier, monospace;
@@ -36,7 +40,9 @@ h2, h3, h4, h5 {
   color: $light;
 }
 
-.navbar-main {
+//Navbar
+
+.nav-main {
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 1.1rem;
   margin-top: 15vh;
@@ -44,14 +50,15 @@ h2, h3, h4, h5 {
   transition: all 0.5s;
 }
 
-#sidebar-bg {
-  background: $dark;
-  padding: 0;
+.navbar-main {
+  @include stickytop;
 }
 
-.card-footer a {
-  color: white;
-  text-align: center;
+#sidebar-container {
+  background: $dark;
+  // padding: 0;
+  z-index: 999;
+  @include stickytop;
 }
 
 @import '~bootstrap/scss/bootstrap';

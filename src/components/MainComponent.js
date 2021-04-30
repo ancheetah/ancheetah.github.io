@@ -29,10 +29,8 @@ class Main extends Component {
 
                     <Col md={10} className="px-0">
                         <div className="main-wrapper">
-                            
-
                             <Header/>
-                            <Container className="content-wrapper bg-light">
+                            <Container fluid className="content-wrapper bg-light py-5">
                                 <Switch>
                                     <Route path='/home' render={() => 
                                         <Home tools={this.state.tools} projects={this.state.projects} /> } />

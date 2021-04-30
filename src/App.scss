@@ -7,6 +7,10 @@ h1, h2, h3, h4 {
   font-family:'Monofett', 'Courier New', Courier, monospace;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 // Sticky Footer
 .main-wrapper {
   display: flex;
@@ -17,8 +21,6 @@ h1, h2, h3, h4 {
 
 .content-wrapper {
   flex: 1 0 auto;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .footer {
@@ -35,7 +37,8 @@ h1, h2, h3, h4 {
 }
 
 .navbar-main {
-  font-size: 1.2rem;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 1.1rem;
   margin-top: 15vh;
   margin-bottom: 2rem;
   transition: all 0.5s;

@@ -6,8 +6,13 @@ export const PROJECTS = [
         desc: "A mock e-commerce website for popular streetwear brands",
         demo: "https://ancheetah.github.io/supreme",
         repo: "supreme",
-        tags: [],
-        features: []
+        tags: ["React", "Redux", "Bootstrap", "UI/UX"],
+        features: [
+            "Sort products in the store by price or rating",
+            "Add/remove items in cart. Total number of items in cart is updated in real time on product page",
+            "Shopping cart displays items and quantities added, subtotals, and grand total. Can update item quantity directly from cart or remove item all together.",
+            "Checkout button opens a modal payment form (uncontrolled react form) to collect credit card information"
+        ]
     },
     {
         id: 1,
@@ -16,7 +21,7 @@ export const PROJECTS = [
         desc: "A static, responsive website designed for a mock food blog",
         demo: "https://ancheetah.github.io/4foodies",
         repo: "4foodies",
-        tags: [],
+        tags: ["HTML/CSS", "Bootstrap"],
         features: []
     },
     {
@@ -26,7 +31,7 @@ export const PROJECTS = [
         desc: "This website was built using React.js, Reactstrap, and Sass",
         demo: "",
         repo: "ancheetah.github.io",
-        tags: [],
+        tags: ["React", "Bootstrap", "Sass"],
         features: []
     },
     {
@@ -37,7 +42,7 @@ export const PROJECTS = [
         demo: "https://ancheetah.github.io/todolist",
         repo: "todolist",
         tags: [],
-        features: []
+        features: ["React", "Bootstrap"]
     },
     {
         id: 4,
@@ -46,7 +51,7 @@ export const PROJECTS = [
         desc: "A website created with Squarespace for a local business in VA",
         demo: "https://www.gilligancontracting.com",
         repo: "web-projects/tree/master/gilligan",
-        tags: [],
+        tags: ["Freelance", "Squarespace", "HTML/CSS", "UI/UX", "Photography", "Branding", "Adobe Suite"],
         features: []
     },
     {
@@ -56,7 +61,7 @@ export const PROJECTS = [
         desc: "A website created with a Wordpress theme for a non-profit organization",
         demo: "https://www.madiff.org/",
         repo: "web-projects/tree/master/madiff",
-        tags: [],
+        tags: ["Freelance", "Wordpress", "HTML/CSS", "UI/UX", "Branding", "Adobe Suite"],
         features: []
     },
     {
@@ -66,7 +71,7 @@ export const PROJECTS = [
         desc: "A website created with Squarespace for a cake design business in DC",
         demo: "",
         repo: "",
-        tags: [],
+        tags: ["Squarespace", "Adobe Suite", "Photography", "Branding", "UI/UX"],
         features: []
     },
     {
@@ -76,7 +81,7 @@ export const PROJECTS = [
         desc: "Where I test out new features and small components",
         demo: "https://codepen.io/ancheetah",
         repo: "",
-        tags: [],
+        tags: ["HTML/CSS", "Bootstrap"],
         features: []
     },
     {
@@ -86,7 +91,7 @@ export const PROJECTS = [
         desc: "A collection of infrared film, 35 mm SLR, and digital photography",
         demo: "https://www.flickr.com/photos/ancheetah",
         repo: "",
-        tags: [],
+        tags: ["Photography"],
         features: []
     }
 ]

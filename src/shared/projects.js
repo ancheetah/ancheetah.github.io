@@ -9,16 +9,16 @@ export const PROJECTS = [
         tags: ["React", "Redux", "Bootstrap", "UI/UX"],
         features: [
             "Sort products in the store by price or rating",
-            "Add/remove items in cart. Total number of items in cart is updated in real time on product page",
-            "Shopping cart displays items and quantities added, subtotals, and grand total. Can update item quantity directly from cart or remove item all together.",
-            "Checkout button opens a modal payment form (uncontrolled react form) to collect credit card information"
+            "Redux store handles shopping cart state so that item quantities are updated globally and cart info is not lost when leaving page",
+            "Checkout button opens a modal payment form to collect credit card information",
+            "React hooks were used for "
         ]
     },
     {
         id: 1,
         name: "4 Foodies",
         img: "4Foodies-logo.png",
-        desc: "A static, responsive website designed for a mock food blog",
+        desc: "A responsive website designed for a mock food blog",
         demo: "https://ancheetah.github.io/4foodies",
         repo: "4foodies",
         tags: ["HTML/CSS", "Bootstrap"],
@@ -41,8 +41,8 @@ export const PROJECTS = [
         desc: "A simple to-do list app",
         demo: "https://ancheetah.github.io/todolist",
         repo: "todolist",
-        tags: [],
-        features: ["React", "Bootstrap"]
+        tags: ["React", "Bootstrap"],
+        features: []
     },
     {
         id: 4,

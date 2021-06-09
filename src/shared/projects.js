@@ -32,7 +32,10 @@ export const PROJECTS = [
         demo: "",
         repo: "ancheetah.github.io",
         tags: ["React", "Bootstrap", "Sass"],
-        features: []
+        features: [
+            "custom create-react-app template",
+            "customized Bootstrap theming with Sass"
+        ]
     },
     {
         id: 3,

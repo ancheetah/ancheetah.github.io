@@ -1,6 +1,8 @@
 import { cache } from 'react'
 import { createClient } from 'contentful'
 
+export const revalidate = 3600 // revlidate every hour
+
 export const getProjects = cache(async () => {
   const CONTENTFUL_ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN
 
